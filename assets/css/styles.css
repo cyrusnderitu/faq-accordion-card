@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    background: hsl(273, 75%, 66%);
+}
+.container{
+    width: 70%;
+    background-color: hsl(240, 5%, 91%);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.accordion_cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion_content{
+    width: 50%;
+}
+.accordion_image{
+    width: 60%;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size:  170%;
+    background-position-x: -465px;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+}
+.accordion_img{
+    margin-left: -50px;
+}
+.accordion_faq{
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
