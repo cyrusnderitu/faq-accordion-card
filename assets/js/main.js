@@ -6,13 +6,14 @@ menus.forEach(menu=>{
 
     arrIcon.addEventListener('click', ()=>{
         const openItem = document.querySelector('.openItem')
+        const openArrow = document.querySelector('.invertArrow')
 
         toggleOpen(accCont)
         toggleArrow(arrIcon)
-        arrIcon.classList.toggle('invertArrow')
 
         if(openItem && openItem !== accCont){
             toggleOpen(openItem)
+            toggleArrow(openArrow)
         } 
 
     })
