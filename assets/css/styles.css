@@ -16,7 +16,7 @@ body{
     background: hsl(273, 75%, 66%);
 }
 .container{
-    width: 70%;
+    width: 75%;
     background-color: hsl(240, 5%, 91%);
     border-radius: 1.5rem;
     overflow: hidden;
@@ -33,14 +33,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 2rem;
+    row-gap: .5rem;
+    padding-right: 6rem;
 }
 .accordion_image{
     width: 50%;
     background-image: url('../images/bg-pattern-desktop.svg');
     background-size:  190%;
-    background-position-x: -460px;
-    background-position-y: -220px;
+    background-position-x: -585px;
+    background-position-y: -285px;
     background-repeat: no-repeat;
     padding: 5rem 0;
 }
@@ -55,6 +56,24 @@ body{
     position: relative;
     padding: .25rem 0;
     overflow: hidden;
+}
+.accordion_menu .accordion_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+}
+.accordion_menu .openHead{
+    font-weight: 600;
+}
+.accordion_menu .openHead:hover{
+    color: initial;
+}
+.accordion_menu h4{
+    cursor: pointer;
+}
+.accordion_menu h4:hover{
+    color: hsl(14, 88%, 65%);
 }
 .accordion_menu p{
     font-size: 14px;
@@ -77,3 +96,15 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1370px) {
+    .accordion_image{
+        width: 50%;
+        background-image: url('../images/bg-pattern-desktop.svg');
+        background-size:  190%;
+        background-position-x: -685px;
+        background-position-y: -250px;
+        background-repeat: no-repeat;
+        padding: 5rem 0;
+    }
+}

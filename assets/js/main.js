@@ -3,29 +3,33 @@ const menus = document.querySelectorAll('.accordion_menu')
 menus.forEach(menu=>{
     const arrIcon = menu.querySelector('.arrow_icon')
     const accCont = menu.querySelector('.accordion_value')
+    const header = menu.querySelector('.accordion_title')
 
-    arrIcon.addEventListener('click', ()=>{
+    header.addEventListener('click', ()=>{
         const openItem = document.querySelector('.openItem')
         const openArrow = document.querySelector('.invertArrow')
+        const openHeader = document.querySelector('.openHead')
 
         toggleOpen(accCont)
         toggleArrow(arrIcon)
+        toggleHeader(header)
 
         if(openItem && openItem !== accCont){
             toggleOpen(openItem)
             toggleArrow(openArrow)
+            toggleHeader(openHeader)
         } 
 
     })
 })
 
 const toggleOpen = (item)=>{
-    if(item.classList.contains('openItem')){
-        item.classList.remove('openItem')
-    }
-    else{
-        item.classList.add('openItem')
-    }
+    item.classList.toggle('openItem')
+    
+}
+const toggleHeader = (item)=>{
+    item.classList.toggle('openHead')
+    
 }
 const toggleArrow = (item)=>{
     if(item.classList.contains('invertArrow')){
