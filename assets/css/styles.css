@@ -152,6 +152,9 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .accordion_hide{
+        overflow: visible;
+    }
     .mobile_acc{
         display: block;
         width: 100%;
