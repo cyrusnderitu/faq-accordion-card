@@ -25,6 +25,8 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
+For live preview of the faq-card-component visit: https://cyrusnderitu.github.io/faq-accordion-card/
+
 ## Where to find everything
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
